@@ -59,7 +59,7 @@ quarto::quarto_preview_stop()
 
 ## Configuración de los capítulos-apéndices
 
-En el ficheero "`_quarto.yml`" se indican los ficheros que componen el trabajo fin de estudios (TFE) del siguiente modo:
+En el fichero "`_quarto.yml`" se indican los ficheros que componen el trabajo fin de estudios (TFE) del siguiente modo:
 
 ``` yml
   chapters:
@@ -80,7 +80,20 @@ Se pueden
 
 -   y también se pueden **comentar** (utilizando el símbolo "`#`" delante del guión) para cuando se genere la salida ("pdf" o "html") únicamente se usen los ficheros-capítulos que están sin comentar. Podría ser interesante comentar todos los capítulos salvo: "index.qmd", "x_referencias.qmd" y el capítulo en el que estemos trabajando, por ejemplo: "capitulo01.qmd".
 
-En el fichero "`_quarto.yml`" se puede utilizar una estructura tan compleja como la siguiente:
+``` yml
+  chapters:
+    - index.qmd        # Prólolgo, ...
+    - capitulo01.qmd   # Introducción
+    #- capitulo02.qmd   # Desarrollo
+    #- capitulo03.qmd   # Aplicación
+  appendices:
+    #- x_apendice01.qmd
+    - x_referencias.qmd
+```
+
+
+
+En el fichero "`_quarto.yml`" se puede utilizar una estructura más compleja, como puede verse a continuación:
 
 ``` yml
   chapters:
