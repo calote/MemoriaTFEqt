@@ -8,6 +8,19 @@ Para instalar la extensión Quarto: "memoriatfeq" en el terminal (de RStudio o d
 quarto use template calote/memoriatfeq
 ```
 
+Responda: "Y" a la pregunta de confiar en el "author" e indique un nombre de subdirectorio, por ejemplo: "mitfg".
+
+Cambie el nombre al fichero: "memoriatfeq.Rproj", para que coincida con el del subdirectorio creado, por ejemplo: "mitfg.Rproj". A continuación, podrá abrir el proyecto RStudio asociado al hacer doble clic en el fichero "mitfg.Rproj".
+
+Abra el fichero "_quarto.yml" para personalizar los datos para que coincidan con los de su trabajo fin de grado (TFG).
+
+Edite los ficheros quarto de su TFG: "index.qmd", "capitulo01.Rmd", etc, y obtenga una previsualización de su trabajo ("preview") o una construcción ("render") en formato: "pdf" y "html", los cuales se encontrarán en la subcarpeta: "`_tfg`" de su proyecto.
+
+- Para construir o "render", en la pestaña "Build" de RStudio haga clic en el botón "Render Project".
+
+- Para previsualizar o "preview", escribir en la consola de R: `quarto::quarto_preview(file = "index.qmd")` (instale previamente el paquete R "quarto" o `install.packages("quarto")`). 
+
+
 ## Uso de la extensión en una carpeta o proyecto RStudio
 
 Desde el proyecto Quarto o directorio del documento, ejecutar el siguiente comando desde el terminal:
@@ -15,6 +28,10 @@ Desde el proyecto Quarto o directorio del documento, ejecutar el siguiente coman
 ```sh
 quarto install extension calote/memoriatfeq
 ```
+
+Cree el fichero "_quarto.yml" y añada los elementos básicos:
+
+
 
 
 ## Requisitos para usar la extensión
