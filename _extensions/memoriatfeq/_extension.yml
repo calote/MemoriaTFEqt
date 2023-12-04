@@ -37,7 +37,7 @@ contributes:
       papersize: a4
       fontsize: 11pt  # defecto: 11,
       lang: es
-      classoption: ["chapterprefix=true","appendixprefix=true","headsepline","footsepline"]
+      classoption: ["chapterprefix=true","appendixprefix=true","headsepline","footsepline","listof=totoc","listot=totoc"]
       toc: true
       toc-depth: 4
       lof: true
@@ -64,7 +64,6 @@ contributes:
           \newcommand{\blandscape}{\begin{landscape}}
           \newcommand{\elandscape}{\end{landscape}}
           \usepackage{colortbl}
-          \usepackage{easy-todo}
           \usepackage{fvextra}
           \DefineVerbatimEnvironment{Highlighting}{Verbatim}{breaklines,commandchars=\\\{\}}
           \usepackage{makeidx}
