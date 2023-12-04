@@ -2,7 +2,7 @@
 
 ## Instalación de la extensión
 
-Para instalar la extensión Quarto: "memoriatfeq" en el terminal (de RStudio o del sistema operativo) escribir:
+Para instalar la extensión Quarto: "memoriatfeq", escribir en el terminal de RStudio o del sistema operativo:
 
 ```sh
 quarto use template calote/memoriatfeq
@@ -29,16 +29,20 @@ Desde el proyecto Quarto o directorio del documento, ejecutar el siguiente coman
 quarto install extension calote/memoriatfeq
 ```
 
-Cree el fichero "_quarto.yml" y añada los elementos básicos:
+Cree el fichero "`_quarto.yml`" y añada los elementos básicos consultando el fichero "`_quarto.yml`" de este repositorio.
 
 
 
 
 ## Requisitos para usar la extensión
 
-Se debe tener instalada alguna distribución de "TeX" en nuestro ordenador: "TinyTeX", ...
+1. Instalar R (<https://www.r-project.org>) y RStudio Desktop (<https://posit.co/products/open-source/rstudio/>).
 
-Si no se tiene ninguna instalada, se recomienda instalar "TinyTeX".
+2. RStudio instala "Quarto" en nuestro ordenador. Pero se puede instalar desde la página oficial: <https://quarto.org/docs/download/>.
+
+3. Se debe tener instalada alguna distribución de "TeX" en nuestro ordenador: "TinyTeX", ...
+
+Si no se tiene ninguna instalada, se recomienda instalar "TinyTeX". A continuación se indican 2 métodos alternativos para instalarlo en su ordenador.
 
 - **Método 1**: desde la consola de R ejecutar las siguientes instrucciones:
 
