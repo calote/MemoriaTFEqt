@@ -16,6 +16,27 @@ Desde el proyecto Quarto o directorio del documento, ejecutar el siguiente coman
 quarto install extension calote/memoriatfeq
 ```
 
+
+## Requisitos para usar la extensión
+
+Se debe tener instalada alguna distribución de "TeX" en nuestro ordenador: "TinyTeX", ...
+
+Si no se tiene ninguna instalada, se recomienda instalar "TinyTeX".
+
+- **Método 1**: desde la consola de R ejecutar las siguientes instrucciones:
+
+```r
+install.packages("tinytex")
+tinytex::install_tinytex()
+```
+
+
+- **Método 2**: desde el terminal (de RStudio o sistema operativo) ejecutar el siguiente comando:
+
+```sh
+quarto install tinytex
+```
+
 # Uso de la extensión (plantilla o template) Quarto: "memoriatfeq"
 
 ## Previsualización rápida
@@ -79,3 +100,5 @@ En el fichero "`_quarto.yml`" se puede utilizar una estructura tan compleja como
     - resources.qmd
     - references.qmd
 ```
+
+
