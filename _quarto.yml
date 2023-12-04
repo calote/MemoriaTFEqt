@@ -1,0 +1,50 @@
+project:
+  type: memoriatfeq
+
+book:
+  title: "Introducción a la Estadística Aplicada con ayuda de R"
+  author: "Marta García Moreno"
+  date: "12/21/2023"
+  chapters:
+    - index.qmd        # Prólolgo, ...
+    - capitulo01.qmd   # Introducción
+    - capitulo02.qmd   # Desarrollo
+    - capitulo03.qmd   # Aplicación
+  appendices:
+    - x_apendice01.qmd
+    - x_referencias.qmd
+
+editor: visual # visual, source
+
+bibliography:
+  - misreferencias.bib
+  #- paquetesR.bib    # Para paquetes R
+
+format:
+  memoriatfeq-pdf:
+    keep-tex: false
+    lof: true
+    lot: true
+    classoption: ["twoside","open=right"]
+    #classoption: ["oneside","open=any"]
+    cite-method: natbib
+    biblio-style: apalike  # plainnat, abbrvnat, unsrtnat, apalike
+    natbiboptions: authoryear,square  # authoryear, numbers, super, square
+    link-citations: true
+    header-includes: |
+      \AtBeginDocument{
+        \titlehead{{\LARGE Universidad de Sevilla
+        \hfill \includegraphics[width=6cm]{logo.png}\\}
+        {\ \\ \Large Facultad de Matemáticas}}
+        \subject{\Large Trabajo Fin de Grado\\
+          Grado en Matemáticas
+        }
+        \title{\Huge Introducción a\\ la Estadística Aplicada\\ con ayuda de R}
+        \author{\textbf{Marta García Moreno}}
+        \date{2 de diciembre de 2023}
+        \publishers{Tutor Prof. Eugenio Martínez González}
+      }
+
+  memoriatfeq-html: default
+
+

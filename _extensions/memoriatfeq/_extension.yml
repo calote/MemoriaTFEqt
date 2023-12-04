@@ -1,0 +1,107 @@
+title: Proyecto memoriatfeq
+author: Pedro L. Luque
+version: 1.0.0
+quarto-version: ">=1.3.0"
+contributes:
+  project:
+    project:
+      type: book
+      output-dir: _tfg  # por defecto: _book
+    # En terminal
+    #    quarto render           # render all formats
+    #    quarto preview
+
+    book:
+      output-file: "mi_tfg"
+      # Si se ejecuta en terminal: quarto render --to latex,
+      #    se obtendrá solamente salida ".tex" en "_book/book-latex"
+      page-navigation: true
+      search: true
+      sidebar:
+        style: docked
+        background: light
+      downloads: [pdf]
+    #format: memoriatfeq-pdf
+    format: memoriatfeq-html
+
+  formats:
+    html:
+      theme: cosmo
+      lang: es
+      code-tools: true
+      link-external-newwindow: true
+      link-external-icon: true
+      reference-location: margin
+      code-overflow: wrap
+    pdf:
+      papersize: a4
+      fontsize: 11pt  # defecto: 11,
+      lang: es
+      classoption: ["chapterprefix=true","appendixprefix=true","headsepline","footsepline"]
+      toc: true
+      toc-depth: 4
+      lof: true
+      lot: true
+      geometry:
+        - margin=2.5cm
+        #- top=30mm
+        #- left=20mm
+        #- right=20mm
+        #- bottom=20mm
+        - heightrounded
+      hyperrefoptions:
+        - linktoc=all
+        - pdfwindowui
+        - pdfpagemode=FullScreen
+        - backref=page
+      # añadiendo un index
+      # en el texto utilizar: entrada\index{entrada}
+      include-in-header:
+        text: |
+          \usepackage{pdfpages}
+          \usepackage{rotating}
+          \usepackage{lscape}
+          \newcommand{\blandscape}{\begin{landscape}}
+          \newcommand{\elandscape}{\end{landscape}}
+          \usepackage{colortbl}
+          \usepackage{easy-todo}
+          \usepackage{fvextra}
+          \DefineVerbatimEnvironment{Highlighting}{Verbatim}{breaklines,commandchars=\\\{\}}
+          \usepackage{makeidx}
+          \makeindex
+          \def\RR{\textbf{R}}
+          \def\bold#1{\textbf{#1}}
+          \usepackage{scrlayer-scrpage}
+          \pagestyle{scrheadings}
+          \automark[section]{chapter} %no usar en: scrartcl
+      header-includes: |
+        \RedeclareSectionCommand[
+          beforeskip=-10pt plus -2pt minus -1pt,
+          afterskip=1sp plus -1sp minus 1sp,
+          font=\normalfont\itshape]{paragraph}
+        \RedeclareSectionCommand[
+          beforeskip=-10pt plus -2pt minus -1pt,
+          afterskip=1sp plus -1sp minus 1sp,
+          font=\normalfont\scshape,
+          indent=0pt]{subparagraph}
+
+      colorlinks: true
+      citeproc: false
+      cite-method: natbib
+      biblio-style: apalike  # plainnat, abbrvnat, unsrtnat, apalike
+      natbiboptions: super,square  # authoryear, numbers, super, square
+      link-citations: true
+      include-before-body:
+        text: |
+          \RecustomVerbatimEnvironment{verbatim}{Verbatim}{
+              showspaces = false,
+              showtabs = false,
+              breaksymbolleft={},
+              breaklines
+            }
+      include-after-body:
+        text: |
+          \printindex
+      number-depth: 3
+      code-overflow: wrap
+      #

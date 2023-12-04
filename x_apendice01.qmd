@@ -1,0 +1,5 @@
+# Apéndice: Código R
+
+## Funciones principales
+
+...
