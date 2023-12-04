@@ -132,3 +132,15 @@ En el fichero "`_quarto.yml`" se puede utilizar una estructura más compleja, co
 ```
 
 
+# Cómo citar este proyecto
+
+```bibtex
+@misc{Luque2023,
+  author = {Luque-Calvo, P.L.},
+  title = {Extensión Quarto: memoriatfeq},
+  year = {2023},
+  publisher = {GitHub},
+  journal = {GitHub repository},
+  howpublished = {\url{https://github.com/calote/memoriatfeq}}
+}
+```
