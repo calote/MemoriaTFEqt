@@ -1,6 +1,22 @@
-# Instalación de la plantilla Quarto: "memoriatfeq"
+# Instalación o uso de la extensión Quarto: "memoriatfeq"
 
-# Uso de la plantilla o template Quarto: "memoriatfeq"
+## Instalación de la extensión
+
+Para instalar la extensión Quarto: "memoriatfeq" en el terminal (de RStudio o del sistema operativo) escribir:
+
+```sh
+quarto use template calote/memoriatfeq
+```
+
+## Uso de la extensión en una carpeta o proyecto RStudio
+
+Desde el proyecto Quarto o directorio del documento, ejecutar el siguiente comando desde el terminal:
+
+```sh
+quarto install extension calote/memoriatfeq
+```
+
+# Uso de la extensión (plantilla o template) Quarto: "memoriatfeq"
 
 ## Previsualización rápida
 
@@ -20,12 +36,11 @@ Para detener la previsualización ejecute:
 quarto::quarto_preview_stop()
 ```
 
-
 ## Configuración de los capítulos-apéndices
 
 En el ficheero "`_quarto.yml`" se indican los ficheros que componen el trabajo fin de estudios (TFE) del siguiente modo:
 
-```yml
+``` yml
   chapters:
     - index.qmd        # Prólolgo, ...
     - capitulo01.qmd   # Introducción
@@ -36,18 +51,17 @@ En el ficheero "`_quarto.yml`" se indican los ficheros que componen el trabajo f
     - x_referencias.qmd
 ```
 
-Se pueden 
+Se pueden
 
-- **añadir** nuevos capítulos o apéndices, 
+-   **añadir** nuevos capítulos o apéndices,
 
-- se pueden **borrar** los que no se vayan a utilizar 
+-   se pueden **borrar** los que no se vayan a utilizar
 
-- y también se pueden **comentar** (utilizando el símbolo "`#`" delante del guión) para cuando se genere la salida ("pdf" o "html") únicamente se usen los ficheros-capítulos que están sin comentar. Podría ser interesante comentar todos los capítulos salvo: "index.qmd", "x_referencias.qmd" y el capítulo en el que estemos trabajando, por ejemplo: "capitulo01.qmd".
-
+-   y también se pueden **comentar** (utilizando el símbolo "`#`" delante del guión) para cuando se genere la salida ("pdf" o "html") únicamente se usen los ficheros-capítulos que están sin comentar. Podría ser interesante comentar todos los capítulos salvo: "index.qmd", "x_referencias.qmd" y el capítulo en el que estemos trabajando, por ejemplo: "capitulo01.qmd".
 
 En el fichero "`_quarto.yml`" se puede utilizar una estructura tan compleja como la siguiente:
 
-```yml
+``` yml
   chapters:
     - index.qmd
     - intro.qmd
@@ -64,5 +78,4 @@ En el fichero "`_quarto.yml`" se puede utilizar una estructura tan compleja como
     - tools.qmd
     - resources.qmd
     - references.qmd
-
 ```
