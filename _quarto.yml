@@ -1,5 +1,5 @@
 project:
-  type: memoriatfeq
+  type: MemoriaTFEqt
 
 book:
   title: "Introducción a la Estadística Aplicada con ayuda de R"
@@ -21,7 +21,7 @@ bibliography:
   #- paquetesR.bib    # Para paquetes R
 
 format:
-  memoriatfeq-pdf:
+  MemoriaTFEqt-pdf:
     keep-tex: false
     lof: true
     lot: true
@@ -45,6 +45,6 @@ format:
         \publishers{Tutor Prof. Eugenio Martínez González}
       }
 
-  memoriatfeq-html: default
+  MemoriaTFEqt-html: default
 
 

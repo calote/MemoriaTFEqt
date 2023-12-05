@@ -1,4 +1,4 @@
-title: Proyecto memoriatfeq
+title: Proyecto MemoriaTFEqt
 author: Pedro L. Luque
 version: 1.0.0
 quarto-version: ">=1.3.0"
@@ -21,8 +21,8 @@ contributes:
         style: docked
         background: light
       downloads: [pdf]
-    #format: memoriatfeq-pdf
-    format: memoriatfeq-html
+    #format: memoriatfeqt-pdf
+    format: MemoriaTFEqt-html
 
   formats:
     html:
