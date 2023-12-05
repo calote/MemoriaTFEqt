@@ -1,16 +1,16 @@
-# Instalación o uso de la extensión Quarto: "memoriatfeq"
+# Instalación o uso de la extensión Quarto: "MemoriaTFEqt"
 
 ## Instalación de la extensión
 
-Para instalar la extensión Quarto: "memoriatfeq", escribir en el terminal de RStudio o del sistema operativo:
+Para instalar la extensión Quarto: "MemoriaTFEqt", escribir en el terminal de RStudio o del sistema operativo:
 
 ```sh
-quarto use template calote/memoriatfeq
+quarto use template calote/MemoriaTFEqt
 ```
 
 Responda: "Y" a la pregunta de confiar en el "author" e indique un nombre de subdirectorio, por ejemplo: "mitfg".
 
-Cambie el nombre al fichero: "memoriatfeq.Rproj", para que coincida con el del subdirectorio creado, por ejemplo: "mitfg.Rproj". A continuación, podrá abrir el proyecto RStudio asociado al hacer doble clic en el fichero "mitfg.Rproj".
+Cambie el nombre al fichero: "MemoriaTFEqt.Rproj", para que coincida con el del subdirectorio creado, por ejemplo: "mitfg.Rproj". A continuación, podrá abrir el proyecto RStudio asociado al hacer doble clic en el fichero "mitfg.Rproj".
 
 Abra el fichero "_quarto.yml" para personalizar los datos para que coincidan con los de su trabajo fin de grado (TFG).
 
@@ -26,7 +26,7 @@ Edite los ficheros quarto de su TFG: "index.qmd", "capitulo01.Rmd", etc, y obten
 Desde el proyecto Quarto o directorio del documento, ejecutar el siguiente comando desde el terminal:
 
 ```sh
-quarto install extension calote/memoriatfeq
+quarto install extension calote/MemoriaTFEqt
 ```
 
 Cree el fichero "`_quarto.yml`" y añada los elementos básicos consultando el fichero "`_quarto.yml`" de este repositorio.
@@ -58,7 +58,7 @@ tinytex::install_tinytex()
 quarto install tinytex
 ```
 
-# Uso de la extensión (plantilla o template) Quarto: "memoriatfeq"
+# Uso de la extensión (plantilla o template) Quarto: "MemoriaTFEqt"
 
 ## Previsualización rápida
 
@@ -68,9 +68,9 @@ Para mostrar una previsualización del contenido del TFE, ejecute en la consola 
 quarto::quarto_preview(file = "index.qmd")
 ```
 
-**Nota:** si quiere que se muestre en la previsualización en el formato "html", adelantar en el fichero "`_quarto.yml`", la llamada a `memoriatfeq-html: default`.
+**Nota:** si quiere que se muestre en la previsualización en el formato "html", adelantar en el fichero "`_quarto.yml`", la llamada a `MemoriaTFEqt-html: default`.
 
-Si se quiere previsualizar en el formato "pdf", colocar en el fichero "`_quarto.yml`", la llamada a `memoriatfeq-html: default` al final.
+Si se quiere previsualizar en el formato "pdf", colocar en el fichero "`_quarto.yml`", la llamada a `MemoriaTFEqt-html: default` al final.
 
 Para detener la previsualización ejecute:
 
@@ -141,10 +141,10 @@ En el fichero "`_quarto.yml`" se puede utilizar una estructura más compleja, co
 ```bibtex
 @misc{Luque2023,
   author = {Luque-Calvo, P.L.},
-  title = {Extensión Quarto: memoriatfeq},
+  title = {Extensión Quarto: MemoriaTFEqt},
   year = {2023},
   publisher = {GitHub},
   journal = {GitHub repository},
-  howpublished = {\url{https://github.com/calote/memoriatfeq}}
+  howpublished = {\url{https://github.com/calote/MemoriaTFEqt}}
 }
 ```
