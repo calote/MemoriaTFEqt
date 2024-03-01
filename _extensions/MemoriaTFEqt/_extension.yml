@@ -66,7 +66,7 @@ contributes:
           \usepackage{colortbl}
           \usepackage{fvextra}
           \DefineVerbatimEnvironment{Highlighting}{Verbatim}{breaklines,commandchars=\\\{\}}
-          \usepackage{makeidx}
+          \usepackage{imakeidx}
           \makeindex
           \def\RR{\textbf{R}}
           \def\bold#1{\textbf{#1}}
