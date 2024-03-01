@@ -135,6 +135,35 @@ En el fichero "`_quarto.yml`" se puede utilizar una estructura más compleja, co
     - references.qmd
 ```
 
+## Lista de figuras y tablas
+
+Para que aparezcan o no las listas de tablas o figuras, en el fichero "`_quarto.yml`" modificar las siguientes opciones:
+
+```yml
+format:
+  MemoriaTFEqt-pdf:
+    lof: true # figuras
+    lot: true # tablas
+```
+
+## Usar más paquetes de LaTeX
+
+Para utilizar más paquetes de LaTeX en el documento, en el fichero "`_quarto.yml`" añadir la siguiente opción:
+
+```yml
+format:
+  MemoriaTFEqt-pdf:
+    mathspec: true # cambiar a `true` si algún paquete da problemas
+    include-in-header:
+      - text:
+          \usepackage{bm}
+```
+
+En el caso del paquete `bm`, se ha de activar la opción `mathspec: true` para poder usar la función `\bm`. Habrá otros casos en los que hacer esto sea conveniente, a parte del caso anterior también es necesario para usar `\boldsymbol` del paquete `amsmath`.
+
+## Otro
+
+Para más información, ir a [Quarto Guide](https://quarto.org/docs/guide/).
 
 # Cómo citar este proyecto
 

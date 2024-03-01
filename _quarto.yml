@@ -22,6 +22,7 @@ bibliography:
 
 format:
   MemoriaTFEqt-pdf:
+    mathspec: false
     keep-tex: false
     lof: true
     lot: true
