@@ -1,3 +1,11 @@
+
+## Introducción
+
+Este proyecto está diseñado para facilitar la redacción de un Trabajo de Fin de Grado (TFG) utilizando **Quarto**, una herramienta poderosa para la creación de documentos técnicos y científicos. Quarto permite integrar texto, código y resultados en un solo documento, lo que lo convierte en una opción ideal para estudiantes que desean presentar sus investigaciones de manera clara y profesional.
+
+Recomendamos el uso de **RStudio** como entorno de desarrollo integrado (IDE) para trabajar con Quarto. RStudio ofrece una interfaz amigable y una serie de funcionalidades que simplifican la edición, ejecución y visualización de documentos Quarto. Con este proyecto, los estudiantes podrán centrarse en el contenido de su TFG, mientras que Quarto y RStudio se encargan de la presentación y el formato.
+
+
 # Instalación o uso de la extensión Quarto: "MemoriaTFEqt"
 
 ## Instalación de la extensión
