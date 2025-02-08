@@ -56,7 +56,7 @@ Si no se tiene ninguna instalada, se recomienda instalar "TinyTeX". A continuaci
 
 ```r
 install.packages("tinytex")
-tinytex::install_tinytex()
+tinytex::install_tinytex(bundle = 'TinyTeX-2') # ocupa aprox. 1.8Gb
 ```
 
 
