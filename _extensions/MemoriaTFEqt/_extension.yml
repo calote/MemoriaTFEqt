@@ -72,7 +72,16 @@ contributes:
           \def\bold#1{\textbf{#1}}
           \usepackage{scrlayer-scrpage}
           \pagestyle{scrheadings}
-          \automark[section]{chapter} %no usar en: scrartcl
+          %\automark[section]{chapter} %no usar en: scrartcl
+          \manualmark
+          \renewcommand*{\chaptermark}[1]{%
+            \markboth{\chaptername\ \thechapter.\ #1}%
+                     {\chaptername\ \thechapter.\ #1}}
+          \renewcommand*{\sectionmark}[1]{\markright{\thesection\ #1}}
+          \ihead{}\chead{}
+          \ohead{\footnotesize\MakeUppercase{\rightmark}}
+          \ifoot{\footnotesize\MakeUppercase{\leftmark}}
+          \cfoot{}\ofoot{\pagemark}
       header-includes: |
         \RedeclareSectionCommand[
           beforeskip=-10pt plus -2pt minus -1pt,
